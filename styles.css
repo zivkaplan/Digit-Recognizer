@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.drawBoard {
+    height: min(60vh, 60vw);
+    aspect-ratio: 1 / 1;
+    display: grid;
+    grid-template-columns: repeat(28, 1fr);
+    grid-template-rows: repeat(28, 1fr);
+    border-radius: 15px;
+    border: 2px solid black;
+    overflow: hidden;
+    padding: 15px;
+    background-color: white;
+}
+
+.pix {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+.buttonDiv {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
