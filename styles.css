@@ -27,14 +27,12 @@ h1 {
     border-radius: 15px;
     border: 2px solid black;
     overflow: hidden;
-    padding: 15px;
-    background-color: white;
 }
 
 .pix {
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: white;
 }
 
 .buttonDiv {
