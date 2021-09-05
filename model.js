@@ -179,7 +179,7 @@ async function showConfusion(model, data) {
     labels.dispose();
 }
 
-document.addEventListener('DOMContentLoaded', run);
+// document.addEventListener('DOMContentLoaded', run);
 
 async function run() {
     const data = new MnistData();

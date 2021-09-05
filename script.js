@@ -44,16 +44,14 @@ cacheDOM.recognizeBtn.addEventListener('click', (e) => {
     canvas.setAttribute('height', '28');
     canvas.setAttribute('width', '28');
     const ctx = canvas.getContext('2d');
-    // cacheDOM.allPix.forEach((pix, i) => {
-    //     const x = i < 28 ? i : i % 28;
-    //     const y = i < 28 ? 0 : Math.floor(i / 28);
-    //     ctx.fillStyle =
-    //         pix.style.backgroundColor === 'black' ? 'white' : 'black';
-    //     ctx.fillRect(x, y, 1, 1);
-    // });
+    cacheDOM.allPix.forEach((pix, i) => {
+        const x = i < 28 ? i : i % 28;
+        const y = i < 28 ? 0 : Math.floor(i / 28);
+        ctx.fillStyle =
+            pix.style.backgroundColor === 'black' ? 'white' : 'black';
+        ctx.fillRect(x, y, 1, 1);
+    });
     const imageData = ctx.createImageData(28, 28);
     const newArr = imageData.data.filter((_, i) => (i - 1) % 4 === 0);
     console.log(newArr);
-    const model = getModel();
-    console.log(model);
 });
